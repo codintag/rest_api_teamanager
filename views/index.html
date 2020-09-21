@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>My team manager</title>
+        <style media="screen">
+            body{
+                text-align: center;
+            }
+            section {
+                background: aliceblue;
+                margin-top: 10px;
+            }
+            .code {
+              margin: 5px 10px;
+              background: #e0e0e0;
+              padding: 0 0 10px 20px;
+              border-radius: 7px;
+              white-space: pre;
+              line-height: 1.5;
+            }
+            section h3 {
+              font-size: 1.5rem;
+              font-weight: 400;
+              margin: 20px 5px;
+              text-transform: uppercase;
+              color: #0068a0;
+            }
+            section p {
+              padding-left: 20px;
+              color: #383838;
+              font-weight: 100;
+              text-indent: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Documentation My Team Manager</h1>
+        <section>
+            <h3>https://myteammanager.herokuapp.com/teams</h3>
+            <h4>method: GET</h4>
+            <p class="code">Return: {success: true||false, data: null||array, error: null||array}</p><br>
+            <h4>method: POST</h4>
+            <h5>body: {nom_equipe: 'unnom'}</h5>
+            <p class="code">Return: {success: true||false, data: null||object, error: null||array}</p><br>
+        </section>
+        <section>
+            <h3>https://myteammanager.herokuapp.com/teams/:id</h3>
+            <h4>method: GET</h4>
+            <p class="code">Return: {success: true||false, data: null||object, error: null||array}</p><br>
+            <h4>method: PUT</h4>
+            <h5>body: {nom_equipe: 'unnom'}</h5>
+            <p class="code">Return: {success: true||false, data: null, error: null||array}</p><br>
+            <h4>method: DELETE</h4>
+            <p class="code">Return: {success: true||false, data: null, error: null||array}</p><br>
+        </section>
+    </body>
+</html>
